@@ -1,0 +1,86 @@
+.topnav {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) /*IPAD & TABLET*/ {
+  .navbar {
+    display: none;
+  }
+  /*MOBILE NAV*/
+
+  .topnav {
+    position: fixed;
+    visibility: visible;
+    overflow: hidden;
+    background-color: rgb(224, 61, 61);
+    width: 100%;
+
+    .nav-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $bg;
+      padding: 2em;
+
+      a:hover {
+        background-color: transparent;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+
+    #myLinks {
+      display: none;
+      background-color: $accent;
+      width: 100%;
+      padding: 2em;
+      height: 100vh;
+      background-image: url('../images/hero-img.svg');
+      background-size: contain;
+
+
+      .socialmedia {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2em 0em;
+
+        a {
+          margin-right: 1em;
+
+          img {
+            height: 52px;
+          }
+        }
+      }
+    }
+    a {
+      color: $bg;
+      text-decoration: none;
+      font-size: 30px;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .icon {
+      display: block;
+      color: $accent;
+    }
+    a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .active {
+      font-weight: 400;
+    }
+  }
+
+  .hero-section {
+    .title {
+      width: 100%;
+    }
+  }
+}

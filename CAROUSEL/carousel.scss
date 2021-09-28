@@ -1,0 +1,72 @@
+  .row {
+    .col-12 {
+      .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-bottom: -3em;
+
+        li {
+          background: $secondary;
+          width: 20px;
+        }
+
+        .active {
+          background: $accent;
+        }
+      }
+    }
+    .col-6 {
+      height: 400px;
+      width: 100%;
+
+      h2,
+      p {
+        color: $bg;
+      }
+
+      h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-weight: 400;
+      }
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        background-color: $accent;
+        color: $bg;
+        padding: 3em;
+        text-decoration: none;
+
+        .info {
+          margin-right: 2em;
+        }
+      }
+
+      a:hover {
+        background-color: $secondary;
+        text-decoration: none;
+        color: $accent;
+
+        h2 {
+          color: $accent;
+        }
+
+        p {
+          display: none;
+        }
+
+        .hover-filter {
+          filter: invert(13%) sepia(99%) saturate(6255%) hue-rotate(209deg)
+            brightness(42%) contrast(138%);
+        }
+      }
+    }
+  }
