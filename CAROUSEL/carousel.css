@@ -1,0 +1,79 @@
+.row .col-12 .carousel-indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-bottom: -3em;
+}
+
+.row .col-12 .carousel-indicators li {
+  background: blue;
+  width: 20px;
+}
+
+.row .col-12 .carousel-indicators .active {
+  background: magenta;
+}
+
+.row .col-6, .row .col-4, .row .col-3 {
+  height: 400px;
+  width: 100%;
+}
+
+.row .col-6 h2,
+.row .col-6 p, .row .col-4 h2,
+.row .col-4 p, .row .col-3 h2,
+.row .col-3 p {
+  color: #303030;
+}
+
+.row .col-6 h2, .row .col-4 h2, .row .col-3 h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.row .col-6 p, .row .col-4 p, .row .col-3 p {
+  font-weight: 400;
+}
+
+.row .col-6 a, .row .col-4 a, .row .col-3 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #f3f3f3;
+  color: #3f3f3f;
+  padding: 3em;
+  text-decoration: none;
+}
+
+.row .col-6 a .info, .row .col-4 a .info, .row .col-3 a .info {
+  margin-right: 2em;
+}
+
+.row .col-6 a:hover, .row .col-4 a:hover, .row .col-3 a:hover {
+  background-color: #585858;
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.row .col-6 a:hover h2, .row .col-4 a:hover h2, .row .col-3 a:hover h2 {
+  color: #f9fde0;
+}
+
+.row .col-6 a:hover p, .row .col-4 a:hover p, .row .col-3 a:hover p {
+  display: none;
+}
+/*# sourceMappingURL=carousel.css.map */
